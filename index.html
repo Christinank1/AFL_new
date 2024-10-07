@@ -3,46 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AFL Team Stats - Map and Bar Chart</title>
-
-    <!-- Leaflet CSS for the map -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <title>AFL Team Stats - Bar Chart</title>
 
     <!-- Chart.js CDN for the bar chart -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!-- Leaflet.js for map functionality -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
-    <!-- CSS to style the map and chart containers -->
+    <!-- CSS to style the canvas -->
     <style>
-        #map {
-            height: 400px;
-            width: 100%;
-            margin-bottom: 50px;
-        }
-
         canvas {
             max-width: 800px;
             margin: 0 auto;
+            display: block;
         }
     </style>
 </head>
 <body>
-    <h1>AFL Team Stats: Map and Goals Comparison</h1>
-
-    <!-- Map Section -->
-    <h2>Stadium Locations Map</h2>
-    <div id="map"></div> <!-- Map container -->
-
+    <h1>AFL Team Goals and Disposals Comparison</h1>
+    
     <!-- Bar Chart Section -->
-    <h2>Goals and Disposals Comparison</h2>
     <canvas id="teamStats"></canvas> <!-- Bar chart canvas -->
-
-    <!-- Include the Map.js file for the stadium map -->
-    <script src="Map.js"></script>
-
+    
     <!-- Include the BarChart.js file for the goals and disposals bar chart -->
-    <script src="BarChart.js"></script>
+    <script src="BarChart.js"></script> <!-- Ensure this file is in the same folder as this HTML file -->
 </body>
 </html>
