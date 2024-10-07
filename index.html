@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Average Goals Chart</title>
-  <!-- Load Vega and Vega-Lite libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.0.0"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFL Team Stats - Map and Bar Chart</title>
+
+    <!-- Leaflet CSS for the map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Chart.js CDN for the bar chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Leaflet.js for map functionality -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- CSS to style the map and chart containers -->
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        canvas {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
-  <!-- Container for the bar chart -->
-  <div id="barchart"></div>
+    <h1>AFL Team Stats: Map and Goals Comparison</h1>
 
-  <!-- Link to your JavaScript file hosted on GitHub -->
-  <script src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY/main/Averagegoal.js"></script>
+    <!-- Map Section -->
+    <h2>Stadium Locations Map</h2>
+    <div id="map"></div> <!-- Map container -->
+
+    <!-- Bar Chart Section -->
+    <h2>Goals and Disposals Comparison</h2>
+    <canvas id="teamStats"></canvas> <!-- Bar chart canvas -->
+
+    <!-- Include the Map.js file for the stadium map -->
+    <script src="Map.js"></script>
+
+    <!-- Include the BarChart.js file for the goals and disposals bar chart -->
+    <script src="BarChart.js"></script>
 </body>
 </html>
