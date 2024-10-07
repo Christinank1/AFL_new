@@ -1,4 +1,10 @@
-{
+// Import Vega Embed if necessary (via script tag or npm package)
+// <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+// <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.0.0"></script>
+// <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
+
+// Create the Vega-Lite specification
+const chartSpec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 500,
   "height": 300,
@@ -78,3 +84,6 @@
     ]
   }
 };
+
+// Embed the chart into the specified container in the HTML
+vegaEmbed('#barchart', chartSpec);
