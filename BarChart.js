@@ -1,42 +1,53 @@
 // BarChart.js
-const ctx = document.getElementById('teamStats').getContext('2d');
+const ctxHBK = document.getElementById('handballKicksChart').getContext('2d');
 
-// Team Data (extracted from your CSV)
+// Team Data (from your dataset)
 let teams = [
     "Bombers", "Giants", "Bulldogs", "Dockers", "Saints", "Lions", "Crows", 
     "Hawks", "Blues", "Swans", "Kangaroos", "Cats", "Suns", "Demons", 
     "Power", "Magpies", "Tigers", "Eagles"
 ];
 
-let goals = [12.0, 13.2, 13.4, 12.4, 11.0, 13.5, 12.1, 13.2, 13.6, 14.0, 10.6, 14.1, 12.2, 11.3, 11.9, 12.5, 9.2, 10.0];
-let disposals = [380.4, 372.5, 370.9, 367.2, 364.4, 361.4, 360.9, 360.0, 359.2, 356.0, 353.6, 350.4, 347.3, 345.7, 344.5, 342.7, 338.2, 315.8];
+// Data for handballs and kicks (from your dataset)
+let handballs = [159.1, 163.6, 154.1, 160.8, 137.9, 128.7, 147.9, 149.6, 142.1, 136.0, 146.1, 134.5, 145.4, 132.9, 125.8, 139.1, 138.5, 124.9];
+let kicks = [221.3, 208.9, 216.8, 206.4, 226.5, 232.6, 213.0, 210.3, 217.1, 220.0, 207.5, 215.9, 201.8, 212.8, 218.7, 203.7, 199.7, 190.9];
 
 // Create the bar chart using Chart.js
-const chart = new Chart(ctx, {
+const handballKicksChart = new Chart(ctxHBK, {
     type: 'bar',
     data: {
         labels: teams, // Team names as labels on the x-axis
         datasets: [
             {
-                label: 'Goals',
-                data: goals, // Data for Goals
-                backgroundColor: 'rgba(75, 192, 192, 0.2)', // Light green background
-                borderColor: 'rgba(75, 192, 192, 1)', // Dark green border
+                label: 'Handballs',
+                data: handballs, // Data for Handballs
+                backgroundColor: 'rgba(255, 99, 132, 0.2)', // Light red background
+                borderColor: 'rgba(255, 99, 132, 1)', // Red border
                 borderWidth: 1
             },
             {
-                label: 'Disposals',
-                data: disposals, // Data for Disposals
-                backgroundColor: 'rgba(153, 102, 255, 0.2)', // Light purple background
-                borderColor: 'rgba(153, 102, 255, 1)', // Dark purple border
+                label: 'Kicks',
+                data: kicks, // Data for Kicks
+                backgroundColor: 'rgba(54, 162, 235, 0.2)', // Light blue background
+                borderColor: 'rgba(54, 162, 235, 1)', // Blue border
                 borderWidth: 1
             }
         ]
     },
     options: {
+        responsive: true,
         scales: {
             y: {
-                beginAtZero: true, // Y-axis starts from 0
+                beginAtZero: true // Y-axis starts from 0
+            }
+        },
+        plugins: {
+            legend: {
+                position: 'top'
+            },
+            title: {
+                display: true,
+                text: 'Comparison of Handballs and Kicks by AFL Teams'
             }
         }
     }
