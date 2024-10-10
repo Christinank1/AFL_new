@@ -1,4 +1,5 @@
 
+
 // LineChart.js
 const ctx = document.getElementById('tacklesChart').getContext('2d');
 
@@ -56,8 +57,8 @@ let tacklesChart = new Chart(ctx, {
     },
     options: {
         scales: {
-                min: 40,    // Set y-axis minimum value
-                max: 70     // Set y-axis maximum value
+            y: {
+                beginAtZero: true
             }
         },
         responsive: true,
