@@ -29,7 +29,7 @@ let colors = [
     'rgba(0, 0, 102, 1)',      // Demons (Navy Blue/Red)
     'rgba(0, 128, 128, 1)',    // Power (Teal/Black/White)
     'rgba(128, 128, 128, 1)',        // Magpies (Black/White)
-    'rgba(255, 255, 224, 1)',    // Tigers (Yellow/Black)
+    'rgba(230, 230, 250, 1)',    // Tigers (Yellow/Black)
     'rgba(121, 160, 221, 1)'      // Eagles (Blue/Gold)
 ];
 
