@@ -1,7 +1,7 @@
 // BubbleChart.js
 const ctxBubble = document.getElementById('bubbleChart').getContext('2d');
 
-// Data for all teams (from your dataset)
+// Data for all teams (from dataset, data.csv))
 let teamsData = [
     {
         team: "Bombers",
