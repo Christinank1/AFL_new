@@ -13,7 +13,7 @@ let goals = [12.0, 13.2, 13.4, 12.4, 11.0, 13.5, 12.1, 13.2, 13.6, 14.0, 10.6, 1
 
 // Same colors as other charts
 let colors = [
-    'rgba(139, 0, 0, 0.7)',      // Bombers (Red/Black)
+    'rgba(139, 0, 0, 1)',      // Bombers (Red/Black)
     'rgba(255, 102, 0, 1)',    // Giants (Orange/Charcoal)
     'rgba(0, 0, 255, 1)',      // Bulldogs (Blue/Red/White)
     'rgba(102, 0, 153, 1)',    // Dockers (Purple/White)
@@ -30,7 +30,7 @@ let colors = [
     'rgba(0, 128, 128, 1)',    // Power (Teal/Black/White)
     'rgba(128, 128, 128, 1)',        // Magpies (Black/White)
     'rgba(255, 255, 224, 1)',    // Tigers (Yellow/Black)
-    'rgba(255, 215, 0, 1)'      // Eagles (Blue/Gold)
+    'rgba(221, 160, 221, 1)'      // Eagles (Blue/Gold)
 ];
 
 
