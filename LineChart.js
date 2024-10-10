@@ -57,8 +57,8 @@ let dataSets = [
         backgroundColor: colors[3],
         fill: false,
         tension: 0.4
-    },
-    // You can add datasets for more teams as needed.
+    }
+    // Add more datasets for other teams as needed
 ];
 
 // Create the chart
