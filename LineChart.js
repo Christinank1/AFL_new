@@ -1,5 +1,3 @@
-
-
 // LineChart.js
 const ctx = document.getElementById('tacklesChart').getContext('2d');
 
@@ -28,25 +26,37 @@ let tacklesData = {
     "Eagles": [55.9, 56.7, 57.8, 58.3, 55.9]
 };
 
+// Predefined team colors
+let teamColors = {
+    "Bombers": 'rgba(139, 0, 0, 1)',      // Bombers (Red/Black)
+    "Giants": 'rgba(255, 102, 0, 1)',    // Giants (Orange/Charcoal)
+    "Bulldogs": 'rgba(0, 0, 255, 1)',    // Bulldogs (Blue/Red/White)
+    "Dockers": 'rgba(102, 0, 153, 1)',   // Dockers (Purple/White)
+    "Saints": 'rgba(0, 0, 0, 1)',        // Saints (Black/White/Red)
+    "Lions": 'rgba(255, 204, 0, 1)',     // Lions (Maroon/Blue/Gold)
+    "Crows": 'rgba(173, 216, 230, 1)',   // Crows (Blue/Red/Yellow)
+    "Hawks": 'rgba(128, 64, 0, 1)',      // Hawks (Brown/Gold)
+    "Blues": 'rgba(0, 128, 0, 1)',       // Blues (Navy Blue/White)
+    "Swans": 'rgba(255, 0, 0, 1)',       // Swans (Red/White)
+    "Kangaroos": 'rgba(0, 102, 204, 1)', // Kangaroos (Blue/White)
+    "Cats": 'rgba(144, 238, 144, 1)',    // Cats (Navy Blue/White)
+    "Suns": 'rgba(255, 192, 203, 1)',    // Suns (Red/Yellow)
+    "Demons": 'rgba(0, 0, 102, 1)',      // Demons (Navy Blue/Red)
+    "Power": 'rgba(0, 128, 128, 1)',     // Power (Teal/Black/White)
+    "Magpies": 'rgba(128, 128, 128, 1)', // Magpies (Black/White)
+    "Tigers": 'rgba(230, 230, 250, 1)',  // Tigers (Yellow/Black)
+    "Eagles": 'rgba(121, 160, 221, 1)'   // Eagles (Blue/Gold)
+};
+
 // Convert tacklesData to Chart.js dataset format
 let datasets = Object.keys(tacklesData).map(team => ({
     label: team,
     data: tacklesData[team],
     fill: false,
-    borderColor: getRandomColor(),
+    borderColor: teamColors[team],  // Use predefined team color
     borderWidth: 3,
     hidden: false // Start with all lines visible
 }));
-
-// Create a random color generator function for different line colors
-function getRandomColor() {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
 
 // Initialize the chart
 let tacklesChart = new Chart(ctx, {
@@ -58,7 +68,7 @@ let tacklesChart = new Chart(ctx, {
     options: {
         scales: {
             y: {
-                 min: 40,
+                min: 40,
                 max: 70 
             }
         },
