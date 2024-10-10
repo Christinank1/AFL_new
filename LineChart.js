@@ -58,7 +58,8 @@ let tacklesChart = new Chart(ctx, {
     options: {
         scales: {
             y: {
-                beginAtZero: true
+                 min: 40,
+                max: 70 
             }
         },
         responsive: true,
