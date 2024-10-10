@@ -120,7 +120,7 @@ let teamsData = [
         disposals: 338.2,
         tackles: 50.5,
         goals: 9.2,
-        color: 'rgba(255, 255, 224, 1)' // Color for Tigers
+        color: 'rgba(230, 230, 250, 1)' // Color for Tigers
     },
     {
         team: "Eagles",
