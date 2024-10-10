@@ -127,7 +127,7 @@ let teamsData = [
         disposals: 315.8,
         tackles: 55.9,
         goals: 10.0,
-        color: 'rgba(221, 160, 221, 1)' // Color for Eagles
+        color: 'rgba(121, 160, 221, 1)' // Color for Eagles
     }
 ];
 
