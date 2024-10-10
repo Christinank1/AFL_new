@@ -71,7 +71,7 @@ let teamsData = [
         disposals: 356.0,
         tackles: 58.4,
         goals: 14.0,
-        color: 'rgba(153, 102, 255, 0.6)' // Color for Swans
+        color: 'rgba(255, 0, 0, 1)' // Color for Swans
     },
     {
         team: "Kangaroos",
