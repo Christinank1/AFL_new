@@ -13,25 +13,26 @@ let goals = [12.0, 13.2, 13.4, 12.4, 11.0, 13.5, 12.1, 13.2, 13.6, 14.0, 10.6, 1
 
 // Same colors as in the BubbleChart.js file for each team
 let colors = [
-    'rgba(255, 99, 132, 0.7)',   // Bombers (Red)
-    'rgba(54, 162, 235, 0.7)',   // Giants (Blue)
-    'rgba(75, 192, 192, 0.7)',   // Bulldogs (Teal)
-    'rgba(153, 102, 255, 0.7)',  // Dockers (Purple)
-    'rgba(255, 159, 64, 0.7)',   // Saints (Orange)
-    'rgba(255, 206, 86, 0.7)',   // Lions (Yellow)
-    'rgba(75, 192, 192, 0.7)',   // Crows (Teal)
-    'rgba(54, 162, 235, 0.7)',   // Hawks (Blue)
-    'rgba(255, 99, 132, 0.7)',   // Blues (Red)
-    'rgba(153, 102, 255, 0.7)',  // Swans (Purple)
-    'rgba(255, 159, 64, 0.7)',   // Kangaroos (Orange)
-    'rgba(255, 206, 86, 0.7)',   // Cats (Yellow)
-    'rgba(75, 192, 192, 0.7)',   // Suns (Teal)
-    'rgba(54, 162, 235, 0.7)',   // Demons (Blue)
-    'rgba(255, 99, 132, 0.7)',   // Power (Red)
-    'rgba(255, 206, 86, 0.7)',   // Magpies (Yellow)
-    'rgba(255, 159, 64, 0.7)',   // Tigers (Orange)
-    'rgba(153, 102, 255, 0.7)'   // Eagles (Purple)
+    'rgba(255, 0, 0, 0.7)',      // Bombers (Red/Black)
+    'rgba(255, 102, 0, 0.7)',    // Giants (Orange/Charcoal)
+    'rgba(0, 0, 255, 0.7)',      // Bulldogs (Blue/Red/White)
+    'rgba(102, 0, 153, 0.7)',    // Dockers (Purple/White)
+    'rgba(0, 0, 0, 0.7)',        // Saints (Black/White/Red)
+    'rgba(255, 204, 0, 0.7)',    // Lions (Maroon/Blue/Gold)
+    'rgba(0, 0, 128, 0.7)',      // Crows (Blue/Red/Yellow)
+    'rgba(128, 64, 0, 0.7)',     // Hawks (Brown/Gold)
+    'rgba(0, 51, 204, 0.7)',     // Blues (Navy Blue/White)
+    'rgba(255, 0, 0, 0.7)',      // Swans (Red/White)
+    'rgba(0, 102, 204, 0.7)',    // Kangaroos (Blue/White)
+    'rgba(0, 51, 102, 0.7)',     // Cats (Navy Blue/White)
+    'rgba(255, 0, 0, 0.7)',      // Suns (Red/Yellow)
+    'rgba(0, 0, 102, 0.7)',      // Demons (Navy Blue/Red)
+    'rgba(0, 128, 128, 0.7)',    // Power (Teal/Black/White)
+    'rgba(0, 0, 0, 0.7)',        // Magpies (Black/White)
+    'rgba(255, 204, 0, 0.7)',    // Tigers (Yellow/Black)
+    'rgba(0, 51, 153, 0.7)'      // Eagles (Blue/Gold)
 ];
+
 
 // Create the bar chart using Chart.js
 const goalsChart = new Chart(ctxGoals, {
