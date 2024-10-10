@@ -1,17 +1,17 @@
 // BarChartGoals.js
 const ctxGoals = document.getElementById('goalsChart').getContext('2d');
 
-// Data for teams and their total goals (from your dataset)
+// Data for teams and their total goals (from my dataset)
 let teams = [
     "Bombers", "Giants", "Bulldogs", "Dockers", "Saints", "Lions", "Crows", 
     "Hawks", "Blues", "Swans", "Kangaroos", "Cats", "Suns", "Demons", 
     "Power", "Magpies", "Tigers", "Eagles"
 ];
 
-// Total goals scored by each team (data from the G column in your dataset)
+// Total goals scored by each team (data from the G column in dataset)
 let goals = [12.0, 13.2, 13.4, 12.4, 11.0, 13.5, 12.1, 13.2, 13.6, 14.0, 10.6, 14.1, 12.2, 11.3, 11.9, 12.5, 9.2, 10.0];
 
-// Same colors as in the BubbleChart.js file for each team
+// Same colors as other charts
 let colors = [
     'rgba(255, 0, 0, 0.7)',      // Bombers (Red/Black)
     'rgba(255, 102, 0, 0.7)',    // Giants (Orange/Charcoal)
